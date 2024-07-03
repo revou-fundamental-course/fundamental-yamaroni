@@ -4,11 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Yama</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Ini Header Nav -->
+    <header class="nav-container">
+        <div class="logo-icon"></div>
 
+        <nav>
+            <a>Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a>Portfolio</a>
+            <a>Message Us</a>
+        </nav>
+    </header>
+    <hr />
+
+    <main>
+        <!-- Ini Home Content -->
+        <section>
+            <header>
+                <h1>Hi User, Welcome to Website</h1>
+            </header>
+
+            <article>
+                <p>Ini adalah website portfolio saya</p>
+
+                <div class="banner-container">
+                    <div class="banner-item" style="background-image: url(assets/1.jpg)"></div>
+                    <div class="banner-item" style="background-image: url(assets/2.jpg)"></div>
+                    <div class="banner-item" style="background-image: url(assets/3.png)"></div>
+                </div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Ini Our Profile Content -->
+        <section id="our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon" style="background-image: url(assets/1.jpg)"></div>
+                    <p>Profile 1</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" style="background-image: url(assets/2.jpg)"></div>
+                    <p>Profile 2</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" style="background-image: url(assets/3.png)"></div>
+                    <p>Profile 3</p>
+                </div>
+
+                <div class="divider"></div>
+            </article>
+        </section>
+
+        <!-- Ini Portfolio Content -->
+
+        <!-- Ini Message Us Content -->
+        <section>
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <article style="display: flex; justify-content: space-between;">
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="firstname">Firstname :</label></td>
+                            <td><input type="text" id="firstname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastname">Lastname :</label></td>
+                            <td><input type="text" id="lastname" required></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <button type="button" onclick="nextSlide(1);">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <div id="result" style="border: 1px solid; height: 100px; width: 100px;"></div>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
