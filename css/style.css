@@ -1,0 +1,71 @@
+/* Ini CSS */
+
+main {
+    padding: 32px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+
+    /* For image icon */
+    background-image: url(https://picsum.photos/500/500);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav>a {
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+.banner-container {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.banner-item {
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+
+    /* For image icon */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.divider {
+    flex: 2;
+}
+
+@media only screen and (max-width: 520px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+}
